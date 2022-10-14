@@ -10,17 +10,17 @@ public class Main {
     public static void main(String[] args) {
         int height, width;
         ASCIArt chat = new ASCIArt();
-        SafeScanner scan = new SafeScanner(Objects.requireNonNull(SafeScanner.class.getResourceAsStream("demo.txt")));
+        SafeScanner scan = new SafeScanner();
 
         int[] output = scan.getDimDepuisFichier();
         height = output[0];
         width = output[1];
 
-        if(height>=3 && width>=7) {
+        if(height >= 3 && width >= 7) {
             chat.dessinChat(height,width);
         }
         else {
-            System.out.println("Il y a une erreur, les dimensions min pour la tête du chat sont de 3 par 7 !");
+            System.out.println("Les dimensions min pour la tête du chat sont de 3 par 7 !");
             System.exit(0);
         }
         scan.fermerScanner();
