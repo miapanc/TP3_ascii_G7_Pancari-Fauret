@@ -13,12 +13,7 @@ public class ASCIArt {
         //milieu de la tête : ligne 2
         for(int i=1;i<height-1;i++) {
             System.out.print("|");
-            if(i==height/2) {
-                System.out.print(" ");
-                System.out.print("0");
-                printBoucleChar(width-6,'_');
-                System.out.print("0");
-                System.out.print(" ");
+            //non finit
             }
             else {
                 printBoucleChar(width-2,' ');
